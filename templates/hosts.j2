@@ -1,0 +1,11 @@
+# {{ ansible_managed }}
+{% if etchosts_local_entries is True %} 
+127.0.0.1       localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1             localhost localhost.localdomain localhost6 localhost6.localdomain6
+{% endif %}
+
+{% for definition in etchosts_entries: %}
+{{ definition.address }}        {{ definition.host }}{% for hostname in definition.secondary_hostnames %} {{ hostname }}{% endfor %}
+
+{% endfor %}
+

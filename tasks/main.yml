@@ -1,0 +1,9 @@
+---
+# tasks file for ansible-role-etchosts
+- name: Control {{ etchosts_file }}.
+  template:
+    src: hosts.j2
+    dest: {{ etchosts_file }}
+    owner: root
+    group: root
+    mode: 0644
