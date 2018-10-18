@@ -9,3 +9,4 @@
 
 etchosts_file: /etc/hosts
 etchosts_local_entries: True
+etchosts_entries:
