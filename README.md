@@ -1,4 +1,4 @@
-Role Name
+etchosts
 =========
 
 Simple role to manage the contents of hosts file on *nix systems.
