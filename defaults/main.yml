@@ -1,12 +1,11 @@
 ---
 # defaults file for ansible-role-etchosts
 #
-#etchosts_entries:
-#  - host: hostname.local
-#    address: 127.0.0.1
-#    secondary_hostnames:
-#      - hostname
-
+# etchosts_entries:
+#   - host: hostname.local
+#     address: 127.0.0.1
+#     secondary_hostnames:
+#       - hostname
 etchosts_file: /etc/hosts
-etchosts_local_entries: True
+etchosts_local_entries: true
 etchosts_entries:

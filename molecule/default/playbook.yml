@@ -1,0 +1,13 @@
+---
+- hosts: all
+  tasks:
+    - include_role:
+        name: sy.etchosts
+      vars:
+        etchosts_file: /etc/hosts-test
+        etchosts_local_entries: true
+        etchosts_entries:
+          - host: myserver.local
+            address: 192.168.0.1
+            secondary_hostnames:
+              - myserver

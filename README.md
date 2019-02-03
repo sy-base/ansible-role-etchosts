@@ -37,7 +37,6 @@ Example Playbook
     - include_role:
         name: sy-base.etchosts
       vars:
-        etchosts_file: /etc/hosts
         etchosts_local_entries: True
         etchosts_entries:
           - host: myserver.local
